@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Filter two arrays</h1>
+        <script>
+            const array1 = [{id: '1', name: 'a'}, {id: '2', name: 'b'}, {id: '3', name: 'c'}, {id: '4', name: 'd'}];
+            const array2 = [{id: '2', name: 'b'}, {id: '3', name: 'c'}];
+
+            const filterArray = (array1, array2) => {
+                const filtered = array1.filter(el => {
+                    return array2.indexOf(el) === -1;
+                })
+                return filtered;
+            }
+            console.log(filterArray(array1, array2));
+        </script>
+    </body>
+</html>
