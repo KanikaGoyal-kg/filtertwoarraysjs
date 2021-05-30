@@ -16,5 +16,16 @@
             }
             console.log(filterArray(array1, array2));
         </script>
+        <br>
+        <script>
+            const arr1 = [{id: '1', name: 'a'}, {id: '2', name: 'b'}, {id: '3', name: 'c'}, {id: '4', name: 'd'}];
+            const arr2 = [{id: '2', name: 'b'}, {id: '3', name: 'c'}];
+            const filterArray1 = arr1 + arr2;
+
+            const tofilter = filterArray1.filter(data => data.id === filterArray1)
+            // console.log(filterArray(array1, array2));
+            console.log(tofilter)
+        </script>
+
     </body>
 </html>
